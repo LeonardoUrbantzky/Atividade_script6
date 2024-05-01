@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body>
+    <h1>Calculadora de preço de livros</h1>
+
+    <div id="calculo">
+      <h2 id="quantLivros">Quantidade de livros</h2>
+
+      <input
+        id="quantL"
+        type="number"
+        placeholder="Digite quantidade de livros"
+      />
+
+      <h2 id="precoLivro">Preço por livros</h2>
+
+      <input id="valorL" type="number" placeholder="digite valor do livros" />
+      <br />
+      <button onclick="atualizar()">Calcular preço final</button>
+
+      <h3 id="resultado">resultado</h3>
+    </div>
+
+    <script>
+      function multiplicar(a, b) {
+        return a * b;
+      }
+
+      function atualizar() {
+        let quant = document.getElementById("quantL").value;
+        let valor = document.getElementById("valorL").value;
+        let resultado = document.getElementById("resultado");
+        resultado.textContent = "Resultado: " + multiplicar(quant,valor);
+      }
+    </script>
+  </body>
+</html>

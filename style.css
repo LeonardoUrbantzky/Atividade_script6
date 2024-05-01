@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+#calculo{
+    background-color: grey;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 5%;
+}
+h2{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+button{
+    margin-top: 30px;
+    text-align: left;
+}
+body{
+    background-color: gray;
+    
+}
+input{
+    width: 90%;
+}
